@@ -1,4 +1,7 @@
+<%
+  String email = (String) session.getAttribute("tempid");
 
+%>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -7,9 +10,16 @@
         <link type="text/css" rel="stylesheet" href="materialize.css"  media="screen,projection"/>
         <link type="text/css"  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <link type="text/javascript" rel="javascript" href="materialize.min.js"  media="screen,projection"/>
+        <script type="text/javascript" src="materialize.min.js"></script>
 	
 		<title>Sign Up</title>
 		<script type="text/javascript">
+		 document.addEventListener('DOMContentLoaded', function() {
+             var elems = document.querySelectorAll('select');
+            var instances = M.FormSelect.init(elems);
+                });
+			
+			
 			var disable = function(){
 				document.getElementById('submit').disabled = true;
 			}
@@ -25,6 +35,8 @@
 					document.getElementById('submit').disabled = false;
 				}
 			}
+			 
+		
 		</script>
 		
 	</head>
@@ -65,7 +77,7 @@
 			  	</div>
 	  			<div class="row">
 					<div class="input-field col s10 offset-s1">
-						<input name="email" type="email" class="validate" id = "email" required>
+						<input value =<%=email %> name="email" type="email" class="validate" id = "email" required>
 						<label for = "email">E-Mail</label>
 						<span class = "helper-text" data-error = "Enter Email Address"></span>
 					</div>
@@ -73,10 +85,24 @@
 				<div class="row">
 					<div class="input-field col s10 offset-s1">
 						<input name = "username" type="text" class="validate" id = "username" required>
-						<label for = "email">Username</label>
+						<label for = "email">User name</label>
 						<span class = "helper-text" data-error = "Enter Username"></span>
 					</div>
 	  			</div>
+	  			
+                <div class = "row">	  
+	  			 <div class="input-field col s10 offset-s1">
+                            <select name = "option" >
+                             
+                             <option value="Student">Student</option>
+                             <option value="Teacher">Teacher</option>
+                           
+                           </select>
+                            
+                 </div>
+                 </div>
+                   
+       							
       			<div class="row">
         			<div class="input-field col s10 offset-s1">
           				<input name="pass" type="password" id = "password" maxlength="20" minlength="8" class="validate" required>
@@ -106,5 +132,6 @@
 	  		
 	  		</div>	
 	  	</div>	
+	  	 
 	</body>
 </html>

@@ -2,6 +2,7 @@
 <%
 
 String email = request.getParameter("email");
+session.setAttribute("tempid", email);
 try
 {
 	Class.forName("com.mysql.cj.jdbc.Driver");
@@ -30,7 +31,7 @@ ResultSet rs = ps.executeQuery();
 		//response.sendRedirect("register.html");
 		 %>
 	        
-         <jsp:forward page="register.html"></jsp:forward>
+         <jsp:forward page="register1.jsp"></jsp:forward>
          <% 
     }
 	

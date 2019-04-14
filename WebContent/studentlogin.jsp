@@ -5,9 +5,8 @@
       <link type="text/css" rel="stylesheet" href="materialize.min.css"  media="screen,projection"/>
       <link type="text/css" rel="stylesheet" href="materialize.css"  media="screen,projection"/>
       <link type="text/css"  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-      <link type="text/javascript" rel="javascript" href="materialize.min.js"  media="screen,projection"/>
-	
-		<title>Sign Up</title>
+     <script type="text/javascript" src="materialize.min.js"></script>
+		<title>Login</title>
 		
 	</head>
 
@@ -44,7 +43,7 @@
 
 	  				</div>
 	  			<div class="col s4 offset-s1">
-          			<button type="submit" class="btn green darken-4" class = "btn waves-effect waves-red btn-large:hover" id = 'submit' name="signup"> check box </button>
+          			<button type="submit" class="btn green darken-4" class = "btn waves-effect waves-green darken-4 btn-large:hover" id = 'submit' name="signup"> check box </button>
           			<BR>
           			<br>
         		</div>
