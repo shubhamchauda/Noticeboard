@@ -31,21 +31,21 @@ ps.setString(1,email);
 ps.setString(2,uname);
 ResultSet rs =  ps.executeQuery();
 %>
- <nav class= "red darken-4" role="navigation">
+ <nav class = "card green darken-4" role="navigation">
             <div class="nav-wrapper container">
 
-            Hello   <a href = "profile.jsp"><%=uname%></a>
+            Hello   <a href = "StudentProfile.jsp"><%=uname%></a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href = "home.jsp">Home</a></li>
-                    <li><a href = "profile.jsp">Profile</a></li>
-                    <li><a href = "addbull1.jsp">Add Bulletin</a></li>
+                    <li><a href = "StudentHome.jsp">Home</a></li>
+                    <li><a href = "StudentProfile.jsp">Profile</a></li>
+                    
                     <li><a href = "logout.jsp">Logout</a></li>
                 </ul>
             </div>
         </nav><br><br>
  <div class = "container">
   <div class="col s12 m4">
-	      <div class="card red darken-2">
+	      <div class="card green darken-4">
 	        <div class="card-content white-text">
 	        Name  : <%=uname %><br>
 	        Email  : <%=email%>

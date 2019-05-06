@@ -30,7 +30,7 @@ else
      if(i>0)       
            {
     	     %>
-    	     <jsp:forward page="home.jsp"></jsp:forward>
+    	     <jsp:forward page="StudentHome.jsp"></jsp:forward>
     	     <%  
     	     
            }

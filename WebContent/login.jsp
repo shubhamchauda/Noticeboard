@@ -19,10 +19,10 @@
 		</script>
 		
 	</head>
-	<body class = "red darken-4" >
+	<body class = "grey lighten-4" >
     <style>
       body{
-          background-image: url("https://previews.123rf.com/images/exoticvector/exoticvector1801/exoticvector180101901/94250513-social-media-background-with-chat-notification-bubbles-in-icons-communication-in-global-network-vect.jpg");
+        
           background-size: cover;
           width: 40%;
           height: 90%;

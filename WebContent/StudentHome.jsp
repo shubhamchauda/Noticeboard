@@ -62,11 +62,11 @@ ResultSet rs =  s1.executeQuery(qr);
  <nav class= "green darken-4" role="navigation">
             <div class="nav-wrapper container">
 
-            Hello   <a href = "profile.jsp"><%=uname%></a>
+            Hello   <a href = "StudentProfile.jsp"><%=uname%></a>
                 <ul class="right hide-on-med-and-down">
                   <li><a href = "StudentHome.jsp">Home</a></li>
                     <li><a href = "StudentProfile.jsp">Profile</a></li>
-                    <li><a href = "Activity.jsp">Activities</a></li>
+               
                     <li><a href = "logout.jsp">Logout</a></li>
                 </ul>
             </div>
@@ -115,7 +115,7 @@ ResultSet rs =  s1.executeQuery(qr);
              }
              %>
             <span class="card-title"></span>
-             <form method="POST" action="comment.jsp?postid=<%=post_id %>" >
+             <form method="POST" action="StudentComment.jsp?postid=<%=post_id %>" >
                 <div class="row" style="padding:-50px;" >
                  
                   <div class="col s11">
@@ -123,8 +123,7 @@ ResultSet rs =  s1.executeQuery(qr);
                     <textarea name="comment" id="textarea1" class="materialize-textarea" data-length="120" onblur="check()" placeholder="comment..."></textarea>                 
                    </div>
                   </div>  
-                  <br>
-                  
+                                   
                   <div class="col s1"> <button class="btn waves-effect waves-light black" type="submit" id = 'submit' name="action"><i class="material-icons black right">send</i></button></div>
                       <span class = "helper-text" data-error = "Enter comment"></span>
                  </div>

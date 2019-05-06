@@ -81,7 +81,7 @@ ResultSet rs =  s1.executeQuery(qr);
                 <ul class="right hide-on-med-and-down">
                   <li><a href = "home.jsp">Home</a></li>
                     <li><a href = "profile.jsp">Profile</a></li>
-                    <li><a href = "addbull1.jsp">Add Bulletin</a></li>
+                    <li><a href = "addbull1.jsp">Post Notice</a></li>
                     <li><a href = "logout.jsp">Logout</a></li>
                 </ul>
             </div>

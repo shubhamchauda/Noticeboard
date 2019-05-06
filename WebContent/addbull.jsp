@@ -36,10 +36,9 @@ else
        int i = ps.executeUpdate();
      if(i>0)       
            {
-    	     %>
-    	     <jsp:forward page="home.jsp"></jsp:forward>
-    	     <%  
-    	     
+    	    
+    	      response.sendRedirect("home.jsp");
+    	   
            }
     
 }
